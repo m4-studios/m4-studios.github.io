@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="M4 & Caleb Gamman">
-  	<meta name="description" content="A recut of Peter Jackson's The Hobbit trilogy into a more captivating faithfully adapted single-movie experience that follows J.R.R. Tolkien's book. New sequences, visual effects, color grading, sound design, and more.">
+  	<meta name="description" content="A recut of Peter Jackson's The Hobbit film trilogy into a single movie experience that follows J.R.R. Tolkien's book more closely. Newly edited sequences, visual effects, color grading, sound design, and more.">
  	<meta name="keywords" content="hobbit, tolkien, fan edit, book accurate">
     <title>M4's "The Hobbit" Fan Edit – Tolkien Inspired Recut of Peter Jackson's Trilogy</title>
  	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
@@ -22,6 +22,7 @@
     body
     {
       position: relative;
+		font-family: Georgia;
     }
     .toc{
       color:#212529;
@@ -46,6 +47,84 @@
 	  max-width: 50%; /* Adjust the maximum width as needed */
 	  height: auto; /* Maintain the aspect ratio */
 	}
+    .dif-font {
+      font-family: "Arial"  !important; /* Override the font for this class */
+    }
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: bold;
+    }
+    .col.mt-3 {
+      box-shadow: 0 1px 8px rgba(1, 1, 1, 0.8); /* Customize the shadow according to your preference */
+    }
+    .card .card-img.special {
+      border-radius: 0; /* Set border-radius to 0 to remove rounded edges */
+    }
+    .navbar-square {
+      background-color: #CEB9B9; /* Choose your desired background color */
+      border-radius: 10px; /* Adjust the border-radius for rounded edges */
+      height: 101%; /* Cover the full height of the navbar */
+      width: 210px; /* Adjust the width of the background square */
+      position: absolute;
+      left: 0;
+      top: 1;
+      z-index: -1; /* Move the square to the background */
+      box-shadow: 0 1px 8px rgba(1, 1, 1, 0.8); /* Customize the shadow according to your preference */
+    }
+    .nav-link {
+      padding-bottom: 5px; /* Adjust to match the height of the square */
+    }
+    .indented-paragraph {
+      text-indent: 3em; /* Adjust the indentation to your preference */
+      padding: 3px; /* Adjust the padding to your preference */
+
+    }
+    .card {
+      overflow: hidden; /* Hide content that overflows the card */
+    }
+	.button {
+      font-family: "Verdana"  !important; /* Override the font for this class */
+
+	  border: none;
+	  padding: 16px 16px;
+	  text-align: center;
+	  text-decoration: none;
+	  display: inline-block;
+	  font-size: 16px;
+	  margin: 4px 20px;
+	  transition-duration: 0.4s;
+	  cursor: pointer;
+      box-shadow: 1px 1px 5px rgba(1, 1, 1, 0.8); /* Customize the shadow according to your preference */
+	  font-weight: bold
+
+	}
+	.button1 {
+	  background-color: #BB4949; 
+	  color: #EBEBEB
+	}
+	.button1:hover {
+	  background-color: #FEE8AA;
+	  color: black 
+	}
+    .container {
+      display: flex;
+    }
+
+    .video, .image {
+      margin: 0 10px; /* Adjust margin to add space between video and image */
+      margin-right: 150px; /* Adjust margin to move the image to the left */
+    }
+
+    .video iframe {
+      object-fit: cover; /* Maintain aspect ratio and cover the container */
+    }
+
+    .image img {
+      width: 85%;
+      height: auto
+      object-fit: cover; /* Maintain aspect ratio and cover the container */
+      margin-left: 150px; /* Adjust margin to move the image to the left */
+
+    }
     </style>
 
 	<!-- ****** faviconit.com favicons ****** -->
@@ -80,37 +159,42 @@
       <div class="col-7 col-sm-5 col-md-4 col-lg-2">
 	    <nav id="navbar-example" class="navbar navbar-expand-lg navbar-light p-3 pb-0 sticky-top d-none d-sm-block">
           <div class="container-fluid">
+<div class="navbar-square"></div>
             <button class="navbar-toggler mb-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            	              <div class="navbar-square"></div>
+
               <nav class="nav nav-pills flex-column justify-content-start">
-                <a class="nav-link badge toc rounded-pill" href="#m4hobbit"><b>M4's <i>The Hobbit</i> Book Edit</b></a>
-			    <a class="nav-link badge toc rounded-pill" href="#goals"><b>Goals & Editing Information</b></a>
-                <a class="nav-link badge toc rounded-pill" href="#overall"><b>Overall Changes</b></a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter1">[1] An Unexpected Party</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter2">[2] Roast Mutton</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter3">[3] A Short Rest</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter4">[4] Over Hill and Under Hill</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter5">[5] Riddles in the Dark</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter6">[6] Out of the Frying-Pan<br>into the Fire</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter7">[7] Queer Lodgings</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter8">[8] Flies and Spiders</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter9">[9] Barrels Out of Bond</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter10">[10] A Warm Welcome</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter11">[11] On the Doorstep</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter12">[12-13] Inside Information /<br>Not at Home</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter14">[14] Fire and Water</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter15">[15] The Gathering of the Clouds</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter16">[16] A Thief in the Night</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter17">[17] The Clouds Burst</a>
-                <a class="nav-link badge toc rounded-pill" href="#chapter18">[18-19] The Return Journey /<br>The Last Stage</a>
-				<a class="nav-link badge toc rounded-pill" href="#special"><b>Special Features</b></a>
-				<a class="nav-link badge toc rounded-pill" href="#release"><b>Release Information</b></a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#m4hobbit"><b>M4's <i>The Hobbit</i> Book Edit</b></a>
+			    <a class="nav-link badge toc rounded-pill dif-font" href="#goals"><b>Goals & Editing Information</b></a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#overall"><b>Overall Changes</b></a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter1">[1] An Unexpected Party</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter2">[2] Roast Mutton</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter3">[3] A Short Rest</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter4">[4] Over Hill and Under Hill</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter5">[5] Riddles in the Dark</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter6">[6] Out of the Frying-Pan<br>into the Fire</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter7">[7] Queer Lodgings</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter8">[8] Flies and Spiders</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter9">[9] Barrels Out of Bond</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter10">[10] A Warm Welcome</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter11">[11] On the Doorstep</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter12">[12-13] Inside Information /<br>Not at Home</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter14">[14] Fire and Water</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter15">[15] The Gathering of the Clouds</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter16">[16] A Thief in the Night</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter17">[17] The Clouds Burst</a>
+                <a class="nav-link badge toc rounded-pill dif-font" href="#chapter18">[18-19] The Return Journey /<br>The Last Stage</a>
+				<a class="nav-link badge toc rounded-pill dif-font" href="#special"><b>Special Features</b></a>
+				<a class="nav-link badge toc rounded-pill dif-font" href="#release"><b>Release Information</b></a>
+
               </nav>
             </div>
           </div>
         </nav>
+
       </div>
       <div class="col-lg-8 pb-5 px-2">
         <div class="container-fluid">
@@ -119,7 +203,7 @@
           <div id="m4hobbit" class="col mt-3">
             <div class="card neumorphstatic">
               <div class="position-relative ratio" style="--bs-aspect-ratio: 40%">
-                <img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4-studios/m4-studios.github.io/main/images/The%20Hobbit%20M4%20Book%20Edit.00_02_27_05.Still055.webp">
+                <img class="card-img special" class="default-image" src="https://raw.githubusercontent.com/m4-studios/m4-studios.github.io/main/images/The%20Hobbit%20M4%20Book%20Edit.00_02_27_05.Still055.webp">
                 <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
                   <h1 class="display-2 mb-0 text-white neumorphtext" style="font-weight: bold !important;line-height: 1;">
                   <br class="d-none d-sm-block">
@@ -128,21 +212,45 @@
               </div>
 		    <center>
 				<li class="list-group-item">A fan edit that combines Peter Jackson's <i>The Hobbit</i> trilogy into a more captivating faithfully adapted single-movie experience.</li>
-               
-                  HD 1080p<b>&ensp;|&ensp;</b>DTS 5.1 Surround Sound<b>&ensp;|&ensp;</b>New Visual Effects<b>&ensp;|&ensp;</b>Color Grading<b>&ensp;|&ensp;</b>Revised in 2023
+               <br>
+               <b>
+                  HD 1080p&ensp;|&ensp;DTS 5.1 Surround Sound&ensp;|&ensp;New Visual Effects&ensp;|&ensp;Color Grading&ensp;|&ensp;Revised in 2023
+		    </b>
 		    </center>
-                <li class="list-group-item"><i>I felt these films had "too much," whether it was the sideplots, CGI, action, or its overall length. As a huge fan of the book, I decided to edit these movies down to fit closer to what Tolkien wrote while also rectifying my critiques. This project is for both the purist and casual fans, with the end result providing a more focused narrative that I find more enjoyable and emotionally impactful.
-                <br><br>
-                Project started on June 19th 2019, where I initially edited with the book at my side, page by page. Since then, the edit has gone through numerous revisions to be as professional as possible until finally being completed on December 24th 2021, 2.5 years later. I also released one last update on September 1st, 2023.</i></li>
-                <li class="list-group-item"><center><iframe width="560" height="315" src="https://www.youtube.com/embed/GlWReFMmk4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>&#160; &#160; &#160;
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Gm2CDRDPJmU?si=AHrtIBHa6qzn20Gc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		</center></li>
+<br>
+
+<div class="container">
+
+     <div class="image">
+      <img src="https://raw.githubusercontent.com/m4-studios/m4-studios.github.io/main/images/the-hobbit-m4-book-edit.jpg" alt="The Hobbit Fan Edit">
+    </div>
+        <div class="video">
+		    <p class="indented-paragraph">
+I felt these films had "too much," whether it was all the sideplots, CGI, action, or new characters. As a huge fan of the book, I decided to edit these movies down to match closer to what Tolkien wrote while also rectifying my own critiques. This project is for both the purist and casual fans alike, with the end result providing a more focused narrative that I find more enjoyable and emotionally impactful.</p>
+    <p class="indented-paragraph">
+                I initially edited with the book at my side, page by page, starting on June 19th, 2019. After numerous revisions to make the edit actually work for general audiences and feel as professional possible, I finished on December 24th, 2021. I did one last revision in September 2023, where I am now fully satisfied with the cut after many years of work.</p>
+
+               </div>
+
+	</div>
+</li>
+<br>
+<center>
+<a href="magnet:?xt=urn:btih:402321df8f23e5c92cb0ef54350396d0e64c849c&dn=The%20Hobbit%20-%20M4%20Book%20Edit%20(1080p).mkv" target="_blank" class="button button1" title="A faster way to download the 1080p release" >Torrent (1080p)</a>
+
+<a href="magnet:?xt=urn:btih:d9f1e73fbe588c67e4e02343e31ce72be1578a5a&dn=The%20Hobbit%20-%20M4%20Book%20Edit%20(720p).mp4" target="_blank" class="button button1" title="A faster way to download the 720p release" >Torrent (720p)</a>
+
+<br><i>Other downloads options available at the bottom of this page.</i><br></center>
+<br>
+
+              <center><br>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/Gm2CDRDPJmU?si=_Nwn7QcnAGGymuBY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+	<br>
                 <li class="list-group-item">
                 <center><h2 class="pt-2">Announcements</h2></center>
                 <center><h4 class="pt-2">September 2023</h4></center>
-                <b>The edit has been UPDATED</b>, see the update log in the main Google Drive to read the full list of changes. Enjoy!<br><br>
-<b><a href="magnet:?xt=urn:btih:402321df8f23e5c92cb0ef54350396d0e64c849c&dn=The%20Hobbit%20-%20M4%20Book%20Edit%20(1080p).mkv">Download here (new Torrent), please seed!</b></a>
-<br><i>Other downloads available below.</i><br>
+                <b>The edit has been UPDATED</b>, see the change log in the main Google Drive to read the full list of new edits. Enjoy!<br><br>
+
 		    </li>
                 <li class="list-group-item"><center>                  
                   <a href="https://ifdb.fanedit.org/m4s-the-hobbit-book-edit"><b>IFDb Approval</b></a> <b>&ensp;|&ensp;</b> 
@@ -236,14 +344,18 @@
             <div class="card neumorphstatic">
               <div class="card-header"><h2 class="pt-2">1. An Unexpected Party</h2></div>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item">The “Sack of Erebor” flashback has been cut, leaving only a short prologue with old Bilbo, now beginning with <i>“In a hole in the ground...”</i> All Frodo dialogue has been removed, instead leaving him with only a short visual cameo. After just a few minutes, we begin the main story of young Bilbo, cutting past the original film title screen as this edit is only titled <i>The Hobbit</i>.</li>
+                <li class="list-group-item">The “Sack of Erebor” flashback has been cut, leaving only a short prologue with old Bilbo, now beginning with <i>“In a hole in the ground...”</i> All Frodo dialogue has been removed, instead leaving him with only a short visual cameo. After just a few minutes, we begin the main story of young Bilbo, cutting past the original film title screen as this edit is only titled <i>The Hobbit</i>.
+              <center><br>
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/GlWReFMmk4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
+                </li> 
                 <li class="list-group-item">"Blunt the Knives" songs is retained but slightly trimmed to remove some of the most ridiculous CGI plate tricks.</li>
-                <li class="list-group-item">
+ 
+                <li class="list-group-item">Small trims to remove some of the most excessively silly moments.
+                <br><br>
+                <i><p class="indented-paragraph">While it was my goal to match these films to the book (which can be silly), I felt Jackson went too far with immature humor that did not honor the tone for which Tolkien intended. Cheap humor like Ori’s gross loud burp, Bombur “eating cheese by the block,” or shoving an axe up Smaug's "jacksy" are some of the examples I cut, while I instead opted to only keep humor that actually does do the spirit of the book justice. This philosophy was maintained for the entirety of the edit, as I completely understand that the book was full of humor, but usually of a more witty, ironic, or charming manner.</p></i>
+               <li class="list-group-item">
                 <img class="card-img" class="default-image" src="https://raw.githubusercontent.com/m4-studios/m4-studios.github.io/main/images/party.webp">
                 </li>
-                <li class="list-group-item">Small trims to remove some of the most excessively silly moments.
-                <br>
-                <i>While it was my goal to match these films to the book (which can be silly), I felt Jackson went too far with immature humor that did not honor the tone for which Tolkien intended. Cheap humor like Ori’s gross loud burp, Bombur “eating cheese by the block,” or shoving an axe up Smaug's "jacksy" are some of the examples I cut, while I instead opted to only keep humor that actually does do the spirit of the book justice. This philosophy was maintained for the entirety of the edit, as I completely understand that the book was full of humor, but usually of a more witty, ironic, or charming manner.</i>
                 <li class="list-group-item"><b>Extended Scenes Kept:</b> Most of the Shire market scene with Bilbo is kept to give us more time with him and the Hobbits so we can appreciate the contrast in lifestyle once we enter the wild. I also have included some extra Dwarf characterization for Óin/Bifur and Thorin/Balin, as I want to give the audience to connect with each of the Dwarves as much as possible now that the movie's focus is brought back to the main quest.</li>
                 </li>
               </ul>
@@ -597,7 +709,17 @@
 		  <!--Release Info-->
           <div id="release" class="col mt-3">
             <div class="card neumorphstatic">
-              <div class="card-header"><h2 class="pt-2">Release Information - <a href="https://drive.google.com/drive/folders/17u6rXjg8R7xDONWJbNSdGJ6sCk6M5TtV?usp=sharing">Download</a> - <a href="magnet:?xt=urn:btih:402321df8f23e5c92cb0ef54350396d0e64c849c&dn=The%20Hobbit%20-%20M4%20Book%20Edit%20(1080p).mkv">Torrent</a> - <a href="https://drive.google.com/drive/folders/1HviXtol3AeJWODDwt4Ma8g1COUhMCS1b?usp=sharing">Backup #1</a> - <a href="https://mega.nz/folder/DYAyWJ5K#U7HxH_t1FpJBWscJGEUOug">Backup #2</a></h2></div>
+              <div class="card-header"><h2 class="pt-2">Release Information</h2></div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+<center>
+<a href="https://drive.google.com/drive/folders/17u6rXjg8R7xDONWJbNSdGJ6sCk6M5TtV?usp=sharing" target="_blank" class="button button1" title="Main project folder">Download (Google Drive) </a>
+<a href="magnet:?xt=urn:btih:402321df8f23e5c92cb0ef54350396d0e64c849c&dn=The%20Hobbit%20-%20M4%20Book%20Edit%20(1080p).mkv" target="_blank" class="button button1" title="A faster way to download the 1080p release" >Download (Torrent)  </a>
+<a href="https://drive.google.com/drive/folders/1HviXtol3AeJWODDwt4Ma8g1COUhMCS1b?usp=sharing" target="_blank" class="button button1" title="An alternate way to download all of the releases" >Download (Backup #1)  </a>
+<a href="https://mega.nz/folder/DYAyWJ5K#U7HxH_t1FpJBWscJGEUOug" target="_blank" class="button button1" title="An alternate way to download some of the releases" >Download (Backup #2)  </a>
+</center>
+                </li>
+
               <ul class="list-group list-group-flush">
                 <li class="list-group-item"><b>Blu-ray ISOs [35-40 GB per disc]</b>
 					<ul>
@@ -641,7 +763,7 @@
            		<li class="list-group-item"><b>Subtitle Languages:</b> English [Closed Captions], English, Brazilian Portuguese, Bulgarian, Dutch, French, German, Greek, Italian, Norwegian, Polish, Slovenian, Spanish, Swedish, Dwarvish, Translating Template</li>
           <li class="list-group-item"><b>Special Features [Included in ISO disc version]</b>
           <ul>
-            <li><b>Editors Audio Commentary:</b> Alternate audio track on the full film and all special features discussing every change made. I talk not just about where changes were made, but also why and how they were done. <i>Commentary is also accessible on the MKV release.</i>
+            <li><b>Editors Audio Commentary:</b> Alternate audio track on the full film and all special features discussing every change made I talk not just about where changes were made, but also why and how they were done. <i>Commentary is also accessible on the MKV release.</i>
             <li><b>Bonus Scenes:</b> Scenes from the original movies that did not make it into the final cut but were still interesting nonetheless. This includes “Durin’s Folk” and several deleted scenes.
             <li><b>Music:</b> “Misty Mountains” & “Blunt the Knives” playable from the menu in their full studio quality.
             <li><b>Release Trailer:</b> Promotional trailer that shows off some of the changes and edits.
